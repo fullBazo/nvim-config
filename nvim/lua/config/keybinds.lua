@@ -61,31 +61,45 @@ vim.keymap.set("n", "<leader>mm", "<cmd>make<CR>")
 
 -- source file
 vim.keymap.set("n", "<leader><leader>", function()
-    vim.cmd("so")
+	vim.cmd("so")
 
 
-local builtin = require("telescope.builtin")
+	local builtin = require("telescope.builtin")
 
-vim.keymap.set("n", "<leader>ff", builtin.find_files, { desc = "Telescope: Find Files" })
-vim.keymap.set("n", "<leader>fg", builtin.live_grep, { desc = "Telescope: Live Grep" })
-vim.keymap.set("n", "<leader>fb", builtin.buffers, { desc = "Telescope: Buffers" })
+	vim.keymap.set("n", "<leader>ff", builtin.find_files, { desc = "Telescope: Find Files" })
+	vim.keymap.set("n", "<leader>fg", builtin.live_grep, { desc = "Telescope: Live Grep" })
+	vim.keymap.set("n", "<leader>fb", builtin.buffers, { desc = "Telescope: Buffers" })
 end)
 
 --autoindentation 42 hehe je suis le goat
 vim.keymap.set('n', '<leader>n', function()
-  -- Convertit espaces en tabs
-  vim.cmd('set noexpandtab')
-  vim.cmd('retab!')
-  
-  -- Réindente tout
-  vim.cmd('normal! ggVG=')
-  
-  -- Supprime espaces en fin de ligne
-  vim.cmd('%s/\\s\\+$//e')
-  
-  -- Supprime lignes vides en fin de fichier
-  vim.cmd('%s/\\n\\+\\%$//e')
-  
-  print("Formaté selon la norme 42 ✓")
+	-- Convertit espaces en tabs
+	vim.cmd('set noexpandtab')
+	vim.cmd('retab!')
+
+	-- Réindente tout
+	vim.cmd('normal! ggVG=')
+
+	-- Supprime espaces en fin de ligne
+	vim.cmd('%s/\\s\\+$//e')
+
+	-- Supprime lignes vides en fin de fichier
+	vim.cmd('%s/\\n\\+\\%$//e')
+
+	print("Formaté selon la norme 42 ✓")
 end, { desc = "Format selon norme 42" })
 
+vim.keymap.set("n", "<C-Up>", "<cmd>resize +2<cr>", { desc = "Agrandir hauteur" })
+vim.keymap.set("n", "<C-Down>", "<cmd>resize -2<cr>", { desc = "Réduire hauteur" })
+vim.keymap.set("n", "<C-Left>", "<cmd>vertical resize -2<cr>", { desc = "Réduire largeur" })
+vim.keymap.set("n", "<C-Right>", "<cmd>vertical resize +2<cr>", { desc = "Agrandir largeur" })
+
+-- Navigation entre splits
+vim.keymap.set("n", "<C-h>", "<C-w>h", { desc = "Fenêtre gauche" })
+vim.keymap.set("n", "<C-j>", "<C-w>j", { desc = "Fenêtre bas" })
+vim.keymap.set("n", "<C-k>", "<C-w>k", { desc = "Fenêtre haut" })
+vim.keymap.set("n", "<C-l>", "<C-w>l", { desc = "Fenêtre droite" })
+
+vim.keymap.set("n", "<Tab>", "<cmd>BufferLineCycleNext<cr>", { desc = "Onglet suivant" })
+vim.keymap.set("n", "<S-Tab>", "<cmd>BufferLineCyclePrev<cr>", { desc = "Onglet précédent" })
+vim.keymap.set("n", "<leader>x", "<cmd>bdelete<cr>", { desc = "Fermer onglet" })
