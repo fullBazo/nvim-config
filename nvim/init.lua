@@ -24,8 +24,3 @@ require("bufferline").setup({
 		diagnostics = "nvim_lsp",
 	},
 })
-require("gruvbox").setup({
-	contrast = "hard", -- "hard", "soft" ou "" (normal)
-	transparent_mode = true,
-})
-vim.cmd.colorscheme("gruvbox")

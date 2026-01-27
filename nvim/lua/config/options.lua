@@ -4,7 +4,7 @@ local set = vim.opt
 --line nums
 set.relativenumber = false
 set.number = true
-    
+
 -- indentation and tabs
 set.tabstop = 4
 set.shiftwidth = 4
@@ -54,4 +54,4 @@ set.incsearch = true
 set.guifont = "JetBrainsMono Nerd Font:h13"
 -- faster cursor hold
 set.updatetime = 50
-vim.opt.listchars = { tab = '▸ ', trail = '·'}
+vim.opt.listchars = { tab = '▸ ', trail = '·' }

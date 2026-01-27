@@ -19,10 +19,10 @@ return {
 	"saadparwaiz1/cmp_luasnip", -- et ça
 
 	"nvim-telescope/telescope.nvim",
+	"folke/tokyonight.nvim",
 	{ "ThePrimeagen/harpoon", branch = "harpoon2" },
 	"nvim-lualine/lualine.nvim",
 	"brenoprata10/nvim-highlight-colors",
-	"ellisonleao/gruvbox.nvim",
 	"nvim-orgmode/orgmode",
 	"tpope/vim-fugitive",
 	"mbbill/undotree",
