@@ -19,7 +19,6 @@ return {
 	"saadparwaiz1/cmp_luasnip", -- et ça
 
 	"nvim-telescope/telescope.nvim",
-	"folke/tokyonight.nvim",
 	{ "ThePrimeagen/harpoon", branch = "harpoon2" },
 	"nvim-lualine/lualine.nvim",
 	"brenoprata10/nvim-highlight-colors",
@@ -38,4 +37,9 @@ return {
 	"numToStr/Comment.nvim",
 	"andweeb/presence.nvim",
 	"akinsho/bufferline.nvim",
+	"akinsho/toggleterm.nvim",
+
+	--themes
+	--"folke/tokyonight.nvim",
+	"navarasu/onedark.nvim",
 }

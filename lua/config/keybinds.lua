@@ -22,6 +22,9 @@ vim.keymap.set("i", "<C-c>", "<Esc>")
 vim.keymap.set("n", "<C-j>", "<cmd>cnext<CR>zz")
 vim.keymap.set("n", "<C-k>", "<cmd>cprev<CR>zz")
 
+
+vim.keymap.set("t", "<C-\\>", [[<C-\><C-n>:ToggleTerm<CR>]])
+
 -- What the heck is Ex mode?
 vim.keymap.set("n", "Q", "<nop>")
 

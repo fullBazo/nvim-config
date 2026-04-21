@@ -34,7 +34,7 @@ This document provides a simple and organized overview of all the custom keybind
 | `x`  | `<leader>p`     | Paste without overwriting clipboard                                                         |
 | `v`  | `<leader>y`     | Yank into system clipboard (even on SSH)                                                    |
 
----
+--
 
 ## Linting and Formatting
 

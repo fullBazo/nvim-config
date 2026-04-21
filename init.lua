@@ -24,3 +24,16 @@ require("bufferline").setup({
 		diagnostics = "nvim_lsp",
 	},
 })
+require('onedark').setup({
+    style = 'deep'
+})
+require('onedark').load()
+require("toggleterm").setup({
+    open_mapping = [[<c-\>]],
+    direction = "horizontal",
+    size = 15,
+    hide_numbers = true,
+    shade_terminals = false,
+    persist_mode = false,
+	shell = "wsl.exe",
+})
